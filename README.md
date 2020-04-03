@@ -1,9 +1,7 @@
 # open-spacial
 ThoughtWorks Shokunin Challenge April 2020
 
-I can haz food truck
-
-![A route exists](https://raw.githubusercontent.com/safetydave/open-spacial/master/doc/can_haz_food.png)
+![I can haz food truck](https://raw.githubusercontent.com/safetydave/open-spacial/master/doc/can_haz_food.png)
 
 ## Running Submission
 
@@ -14,17 +12,17 @@ For now, see [exploratory notebook documentation](doc/OpenSpacial.pdf). Proper e
 From a selected run:
 ```
 Number of samples for each p: 10000
-1.0 0.0
-0.9 0.0
-0.8 0.0
-0.7 0.0
-0.6 0.0053
-0.5 0.0773
-0.4 0.4065
-0.3 0.8358
-0.2 0.9712
-0.1 0.9967
-0.0 1.0
+1.0 0.00
+0.9 0.00
+0.8 0.00
+0.7 0.00
+0.6 0.00
+0.5 0.08
+0.4 0.41
+0.3 0.83
+0.2 0.97
+0.1 1.00
+0.0 1.00
 ```
 
 Confidence interval (95%) for population proportions < +-0.01
