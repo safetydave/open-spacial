@@ -7,7 +7,7 @@ I can haz food truck
 
 ## Running Submission
 
-For now, see [exploratory notebook documentation](blob/master/doc/OpenSpacial.pdf). Proper executable solution coming so I can play around with migrating and testing notebooks and Andy can see test commits.
+For now, see [exploratory notebook documentation](doc/OpenSpacial.pdf). Proper executable solution coming so I can play around with migrating and testing notebooks and Andy can see test commits.
 
 ## Results
 
