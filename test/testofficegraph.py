@@ -49,6 +49,13 @@ class TestOfficeGraph(unittest.TestCase):
         self.assertEqual(set(range(100)), self.og10.all_desks())
         self.assertEqual(set(range(25)), self.og5.all_desks())
 
+    def test_apply_occupancy(self):
+        self.og10.apply_occupancy([53, 98])
+        self.assertNeighboursOf(self.og10, [62, 64, 73], 63)
+        self.assertNeighboursOf(self.og10, [42, 51, 62], 52)
+        self.assertNeighboursOf(self.og10, [78, 87, 89], 88)
+        self.assertNeighboursOf(self.og10, [89, 100], 99)
+
 
 if __name__ == '__main__':
     unittest.main()

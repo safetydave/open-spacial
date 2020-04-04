@@ -29,3 +29,7 @@ class OfficeGraph:
 
     def back_row(self):
         return set(range(self.rank))
+
+    def apply_occupancy(self, seating):
+        #todo this might be nicer as just removing edges
+        self.graph.remove_nodes_from(seating)
