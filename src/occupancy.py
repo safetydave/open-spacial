@@ -3,8 +3,9 @@ import random
 
 class Occupancy:
 
-    def __init__(self, og, p, seed=None):
-        self.og = og
+    def __init__(self, sources, all_desks, p, seed=None):
+        self.sources = sources
+        self.all_desks = all_desks
         self.p = p
 
         if seed:
@@ -13,10 +14,9 @@ class Occupancy:
         self.seating = self.generate_seating()
 
     def generate_source(self):
-        return random.choice(range(self.og.rank))
+        return random.choice(list(self.sources))
 
     def generate_seating(self):
-        excluded_nodes = set([self.source, self.og.target])
-        open_seats = set(self.og.graph.nodes).difference(excluded_nodes)
-        num_seats = int(round(self.p * len(open_seats)))
-        return random.sample(open_seats, num_seats)
+        open_desks = self.all_desks.difference({self.source})
+        num_desks = int(round(self.p * len(open_desks)))
+        return random.sample(open_desks, num_desks)
