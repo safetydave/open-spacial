@@ -31,5 +31,5 @@ class OfficeGraph:
         return set(range(self.rank))
 
     def apply_occupancy(self, seating):
-        #todo this might be nicer as just removing edges
+        # todo this might be nicer as just removing edges
         self.graph.remove_nodes_from(seating)

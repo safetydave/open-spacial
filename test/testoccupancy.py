@@ -32,4 +32,4 @@ class TestOccupancy(unittest.TestCase):
         self.assertEqual(99, len(self.occ_rnd_max.seating))
         self.assertTrue(set(self.occ_rnd_max.seating).issubset(self.all_desks))
 
-    #todo test distributions
+    # todo test distributions
