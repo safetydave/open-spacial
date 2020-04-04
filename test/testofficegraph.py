@@ -41,6 +41,14 @@ class TestOfficeGraph(unittest.TestCase):
         self.assertNeighboursOf(self.og10, [80, 91, 100], 90)
         self.assertNeighboursOf(self.og10, [88, 97, 99, 100], 98)
 
+    def test_back_row(self):
+        self.assertEqual(set(range(10)), self.og10.back_row())
+        self.assertEqual(set(range(5)), self.og5.back_row())
+
+    def test_all_desks(self):
+        self.assertEqual(set(range(100)), self.og10.all_desks())
+        self.assertEqual(set(range(25)), self.og5.all_desks())
+
 
 if __name__ == '__main__':
     unittest.main()

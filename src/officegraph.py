@@ -23,3 +23,9 @@ class OfficeGraph:
             self.graph.add_edge(n - 1, n)
         if i == self.rank - 1:
             self.graph.add_edge(n, self.target)
+
+    def all_desks(self):
+        return set(range(self.target))
+
+    def back_row(self):
+        return set(range(self.rank))
