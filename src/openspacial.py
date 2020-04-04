@@ -1,6 +1,6 @@
-from src.officegraph import OfficeGraph
-from src.occupancy import Occupancy
-from src.solver import Solver
+from officegraph import OfficeGraph
+from occupancy import Occupancy
+from solver import Solver
 
 
 def main():
