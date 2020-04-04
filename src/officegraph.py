@@ -14,3 +14,8 @@ class OfficeGraph:
             for j in range(rank):
                 n = i * rank + j
                 self.graph.add_node(n)
+                self.add_edges(n, i, j)
+
+    def add_edges(self, n, i, j):
+        if i > 0:
+            self.graph.add_edge(n - self.rank, n)
