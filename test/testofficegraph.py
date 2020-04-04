@@ -21,9 +21,25 @@ class TestOfficeGraph(unittest.TestCase):
         self.assertEqual(101, len(self.og10.graph.nodes))
         self.assertEqual(26, len(self.og5.graph.nodes))
 
-    def test_col_neighbours(self):
-        self.assertEqual(tuple([10]), tuple(self.og10.graph.neighbors(0)))
-        self.assertEqual(tuple([0, 20]), tuple(self.og10.graph.neighbors(10)))
+    def assertNeighboursOf(self, og, node_list, neighbours_of):
+        self.assertEqual(set(node_list), set(og.graph.neighbors(neighbours_of)))
+
+    # you can move between desks in the same row or column, but not diagonally
+    # all desks in the last row can reach the food truck
+    def test_neighbours(self):
+        # start corner
+        self.assertNeighboursOf(self.og10, [1, 10], 0)
+        # start row and col
+        self.assertNeighboursOf(self.og10, [0, 11, 20], 10)
+        self.assertNeighboursOf(self.og10, [0, 2, 11], 1)
+        # middle
+        self.assertNeighboursOf(self.og10, [5, 14, 16, 25], 15)
+        self.assertNeighboursOf(self.og10, [53, 62, 64, 73], 63)
+        # other corner
+        self.assertNeighboursOf(self.og10, [8, 19], 9)
+        # last row
+        self.assertNeighboursOf(self.og10, [80, 91, 100], 90)
+        self.assertNeighboursOf(self.og10, [88, 97, 99, 100], 98)
 
 
 if __name__ == '__main__':

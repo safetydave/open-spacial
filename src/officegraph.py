@@ -19,3 +19,7 @@ class OfficeGraph:
     def add_edges(self, n, i, j):
         if i > 0:
             self.graph.add_edge(n - self.rank, n)
+        if j > 0:
+            self.graph.add_edge(n - 1, n)
+        if i == self.rank - 1:
+            self.graph.add_edge(n, self.target)
