@@ -8,3 +8,6 @@ class Solver:
 
     def can_haz_food(self, source):
         return nx.has_path(self.og.graph, source, self.og.target)
+
+    def path_to_food(self, source):
+        return nx.shortest_path(self.og.graph, source, self.og.target)
