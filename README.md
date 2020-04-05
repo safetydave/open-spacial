@@ -11,6 +11,7 @@ Proper setup coming for:
 
 * python 3.6+
 * networkx
+* numpy
 
 ### To Execute
 
