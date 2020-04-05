@@ -10,6 +10,7 @@ ThoughtWorks Shokunin Challenge April 2020
 Proper setup coming for:
 
 * python 3.6+
+* matplotlib
 * networkx
 * numpy
 
