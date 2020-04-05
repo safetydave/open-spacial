@@ -23,3 +23,6 @@ class TestGraphDraw(unittest.TestCase):
         og = OfficeGraph()
         draw_graph(og, '../out/graph1.png')
         draw_graph(og, '../out/graph2.png', source=5)
+        og.apply_occupancy([50, 51, 52, 53, 54])
+        path = [2, 12, 22, 32, 42, 43, 44, 45, 55, 65, 75, 85, 95, 100]
+        draw_graph(og, '../out/graph3.png', source=2, path=path)

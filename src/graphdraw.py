@@ -20,11 +20,13 @@ def draw_graph_styled(graph, pos, nodelist, colour):
     nx.draw(graph, pos=pos, nodelist=nodelist, node_color=colour, with_labels=True)
 
 
-def draw_graph(og, fname, source=None):
+def draw_graph(og, fname, source=None, path=None):
     gl_pos = grid_layout_pos(og.rank)
-    draw_graph_styled(og.graph, gl_pos, og.graph.nodes(), 'cornflowerblue')
-    draw_graph_styled(og.graph, gl_pos, [og.target], 'tomato')
+    plt.clf()
+    draw_graph_styled(og.graph, gl_pos, og.graph.nodes(), 'tab:blue')
+    draw_graph_styled(og.graph, gl_pos, [og.target], 'tab:orange')
     if source is not None:
-        draw_graph_styled(og.graph, gl_pos, [source], 'hotpink')
-    # todo limegreen for path
+        draw_graph_styled(og.graph, gl_pos, [source], 'tab:pink')
+    if path is not None:
+        draw_graph_styled(og.graph, gl_pos, path[1:-1], 'tab:green')
     plt.savefig(fname)
