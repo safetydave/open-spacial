@@ -8,8 +8,7 @@ class Occupancy:
         self.all_desks = all_desks
         self.p = p
 
-        if seed:
-            random.seed(seed)
+        random.seed(seed)
         self.source = self.generate_source()
         self.seating = self.generate_seating()
 

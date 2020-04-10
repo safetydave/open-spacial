@@ -13,6 +13,7 @@ Proper setup coming for:
 * matplotlib
 * networkx
 * numpy
+* scipy
 
 ### To Execute
 
