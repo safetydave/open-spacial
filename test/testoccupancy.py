@@ -82,3 +82,7 @@ class TestOccupancy(unittest.TestCase):
         # this will fail for instance if generate_seating() were to
         # return [list(open_desks)[i] for i, _ in enumerate(open_desks)]
         self.assertGreater(pc, 0.05)
+
+
+if __name__ == '__main__':
+    unittest.main()

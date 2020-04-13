@@ -23,8 +23,8 @@ class TestOfficeGraph(unittest.TestCase):
     # Grid of 100 desks and 1 food truck
     def test_num_nodes(self):
         # num = rank ** 2 + 1
-        self.assertEqual(101, len(self.og10.graph.nodes))
-        self.assertEqual(26, len(self.og5.graph.nodes))
+        self.assertEqual(101, len(self.og10.graph.nodes()))
+        self.assertEqual(26, len(self.og5.graph.nodes()))
 
     def test_back_row(self):
         # range(0, rank)

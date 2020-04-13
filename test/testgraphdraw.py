@@ -26,3 +26,7 @@ class TestGraphDraw(unittest.TestCase):
         og.apply_occupancy([50, 51, 52, 53, 54])
         path = [2, 12, 22, 32, 42, 43, 44, 45, 55, 65, 75, 85, 95, 100]
         draw_graph(og, '../out/test_graph3.png', source=2, path=path)
+
+
+if __name__ == '__main__':
+    unittest.main()

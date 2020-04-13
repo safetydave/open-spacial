@@ -26,3 +26,7 @@ class TestSolver(unittest.TestCase):
         self.assertEqual(short_path, [2, 5, 8, 9])
         short_path = solver.path_to_food(0)
         self.assertEqual(short_path, [0, 1, 2, 5, 8, 9])
+
+
+if __name__ == '__main__':
+    unittest.main()
