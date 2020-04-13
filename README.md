@@ -70,6 +70,8 @@ The submitted code is supported by and driven by tests including:
 
 * Deterministic unit tests
 * Statistical unit tests to provide some level of assurance that observed results are drawn from an expected distribution. These tests are applied to random selection of source seat (`TestOccupancy.test_source_distribution`) and office seating (`TestOccupancy.test_seating_distribution`).
-* Visual inspection tests which provide positive and negative examples of available paths for random occupancies at each value of p ('TrialRunner.draw_case()').
+* Visual inspection tests which provide positive and negative examples of available paths for random occupancies at each value of p (`TrialRunner.draw_case()`).
+
+My learning objectives included migrating notebook sketches to properly structured Python projects including a range of tests suitable for analytics applications. I made some progress.
 
 ### 4. Still working on the go script...
