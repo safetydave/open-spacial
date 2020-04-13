@@ -8,7 +8,7 @@ def run_one():
     ps = [x / 10.0 for x in range(11)]
     ps.reverse()
 
-    tr = TrialRunner(trials, ps, draw_cases=True)
+    tr = TrialRunner(trials, ps)
     tr.run()
     print(tr.summary())
 
@@ -33,4 +33,4 @@ def run_many():
 
 
 if __name__ == "__main__":
-    run_many()
+    run_one()
