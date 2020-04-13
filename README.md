@@ -13,20 +13,30 @@ Example of being unable to reach the food truck in a nearly empty office.
 
 ### Dependencies
 
-Proper setup coming for:
+Sorry I haven't had time to prepare something foolproof.
+
+For now, ensure you have:
 
 * python 3.6+
-* matplotlib
-* networkx
-* numpy
-* pandas
-* scipy
+* modules installed (eg via pip)
+    * matplotlib
+    * networkx
+    * numpy
+    * pandas
+    * scipy
 
 ### To Execute
 
 1. Install dependencies,
 2. Clone repo, and 
 3. Run `python src/openspacial.py`
+
+### To Run Tests
+
+```
+cd test
+python -m unittest discover .
+```
 
 ## Results
 
