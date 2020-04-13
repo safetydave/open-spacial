@@ -61,7 +61,7 @@ Number of samples for each p: 10000
 
 ### 1. Solving the Problem
 
-Looks like a plausible solution. Tests and inspected drawn examples give confidence the results are correct. The results are similar to the problem statement. However, statistical analysis (below) shows it's almost impossible that my solution would generate the same results as the problem statement. 
+Looks like a plausible solution. Tests and inspected visualised examples give confidence the results are correct. The results are similar to the problem statement. However, statistical analysis (below) shows it's almost impossible that my solution would generate the same results as the problem statement. 
 
 ### 2. Clean Code
 
