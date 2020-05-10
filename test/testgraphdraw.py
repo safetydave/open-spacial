@@ -3,9 +3,9 @@ import os
 import sys
 import unittest
 
-sys.path.append(os.path.abspath('..'))
-from src.graphdraw import grid_layout_pos, draw_graph
-from src.officegraph import OfficeGraph
+sys.path.append(os.path.abspath('../src'))
+from ospacial.graphdraw import grid_layout_pos, draw_graph
+from ospacial.officegraph import OfficeGraph
 
 
 class TestGraphDraw(unittest.TestCase):

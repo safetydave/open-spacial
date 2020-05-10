@@ -29,7 +29,7 @@ For now, ensure you have:
 
 1. Install dependencies,
 2. Clone repo, and 
-3. Run `python src/openspacial.py`
+3. Run `python src/ospacial/openspacial.py`
 
 ### To Run Tests
 
