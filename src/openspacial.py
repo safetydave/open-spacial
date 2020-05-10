@@ -1,5 +1,10 @@
-from trialrunner import TrialRunner
 import pandas as pd
+import os
+import sys
+
+# todo - remove this when package correctly installed
+sys.path.append(os.path.abspath('./ospacial'))
+from trialrunner import TrialRunner
 
 
 def run_one():
