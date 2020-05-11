@@ -1,9 +1,6 @@
 import numpy as np
-import os
-import sys
 import unittest
 
-sys.path.append(os.path.abspath('../src'))
 from ospacial.graphdraw import grid_layout_pos, draw_graph
 from ospacial.officegraph import OfficeGraph
 

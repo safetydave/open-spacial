@@ -2,6 +2,9 @@
 __pycache__/
 *.pyc
 
+# virtualenv folder
+venv/
+
 # Setuptools distribution folder.
 /dist/
 

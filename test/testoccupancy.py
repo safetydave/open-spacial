@@ -3,7 +3,6 @@ from scipy.stats import chisquare
 import sys
 import unittest
 
-sys.path.append(os.path.abspath('../src'))
 from ospacial.occupancy import Occupancy
 
 
