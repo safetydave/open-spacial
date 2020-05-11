@@ -1,9 +1,6 @@
-import os
-import sys
 import unittest
 
-sys.path.append(os.path.abspath('..'))
-from src.officegraph import OfficeGraph
+from ospacial.officegraph import OfficeGraph
 
 
 class TestOfficeGraph(unittest.TestCase):

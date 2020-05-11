@@ -1,10 +1,7 @@
-import os
-import sys
 import unittest
 
-sys.path.append(os.path.abspath('..'))
-from src.solver import Solver
-from src.officegraph import OfficeGraph
+from ospacial.solver import Solver
+from ospacial.officegraph import OfficeGraph
 
 
 class TestSolver(unittest.TestCase):

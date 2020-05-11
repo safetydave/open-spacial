@@ -1,3 +1,18 @@
+# compiled python files and modules
 __pycache__/
-.DS_Store
+*.pyc
+
+# virtualenv folder
+venv/
+
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+/*.egg-info
+
+# run diagnostics
 out/
+
+# macOS folder layout
+.DS_Store

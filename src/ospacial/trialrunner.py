@@ -1,7 +1,7 @@
-from officegraph import OfficeGraph
-from occupancy import Occupancy
-from solver import Solver
-from graphdraw import draw_graph
+from ospacial.officegraph import OfficeGraph
+from ospacial.occupancy import Occupancy
+from ospacial.solver import Solver
+from ospacial.graphdraw import draw_graph
 
 
 class TrialRunner:

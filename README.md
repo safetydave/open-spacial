@@ -11,25 +11,20 @@ Example of being unable to reach the food truck in a nearly empty office.
 
 ## Running Submission
 
-### Dependencies
+### Set up Environment and Dependencies
 
-Sorry I haven't had time to prepare something foolproof.
-
-For now, ensure you have:
-
-* python 3.6+
-* modules installed (eg via pip)
-    * matplotlib
-    * networkx
-    * numpy
-    * pandas
-    * scipy
+1. Clone this repo (to `./open-spacial`)
+2. Create and activate a Python 3.6+ Virtual Environment (`virtualenv -p python3 open-spacial`
+   then `source open-spacial/bin/activate`
+3. From repo base directory (`cd open-spacial`)
+4. Run `pip install .`
 
 ### To Execute
 
-1. Install dependencies,
-2. Clone repo, and 
-3. Run `python src/openspacial.py`
+```
+cd src
+python openspacial.py
+```
 
 ### To Run Tests
 

@@ -3,9 +3,7 @@ import sys
 from scipy.stats import norm
 import unittest
 
-sys.path.append(os.path.abspath('..'))
-sys.path.append(os.path.abspath('../src'))
-from src.trialrunner import TrialRunner
+from ospacial.trialrunner import TrialRunner
 
 
 class TestTrialRunner(unittest.TestCase):

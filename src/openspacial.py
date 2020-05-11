@@ -1,5 +1,6 @@
-from trialrunner import TrialRunner
 import pandas as pd
+
+from ospacial.trialrunner import TrialRunner
 
 
 def run_one():
